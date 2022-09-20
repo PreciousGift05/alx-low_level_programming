@@ -2,9 +2,7 @@
 
 /**
  * puts2 - a function that prints every character of a string
- *
  * pointer of parameter
- *
  * Return: Nothing
  */
 void puts2(char *str)
