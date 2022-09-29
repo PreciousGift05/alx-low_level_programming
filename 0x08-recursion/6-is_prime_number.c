@@ -1,32 +1,27 @@
 #include "main.h"
 /**
- * is_prime_number - returns true if the number is prime
- * @n: the number to check
- *
- * Return: true if the number is prime
+ * is_prime - primo
+ * @x: numero
+ * @y: numero
+ * Return: resultado 0 no primo 1 primo
+ */
+int is_prime(int x, int y)
+{
+	if ((x % y) == 0 && y < x)
+		return (0);
+	if (x == y)
+		return (1);
+	else
+		return (is_prime(x, y + 1));
+}
+/**
+ * is_prime_number - verifica si es numero primo
+ * @n: numero a verificar
+ * Return: resultado 0 no primo 1 primo
  */
 int is_prime_number(int n)
 {
-	int start = n / 2;
-
 	if (n <= 1)
 		return (0);
-	return (is_prime(n, start));
-}
-
-/**
- * is_prime - returns the 1 if n is prime
- * @n: number to be checked
- * @start: number to start checking from
- *
- * Return: 1 if n is prime, 0 otherwise
- */
-
-int is_prime(int n, int start)
-{
-	if (start <= 1)
-		return (1);
-	else if (n % start == 0)
-		return (0);
-	return (is_prime(n, start - 1));
+	return (is_prime(n, 2));
 }
