@@ -14,7 +14,8 @@ int _sqrt_recursion(int n)
 	return (_sqrt(0, n));
 }
 
-/**                                                                                                                                    * _sqrt - returns the square root of a number
+/**
+ * _sqrt - returns the square root of a number
  * @n: test number
  * @x: squared number
  *
