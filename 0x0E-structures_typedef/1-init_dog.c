@@ -7,11 +7,12 @@
  * @name: string for name
  * @age: integer for age
  * @owner: string for owners
+ * Return: No.
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d != NULL)
+	if (d)
 	{
 		d->name = name;
 		d->age = age;
