@@ -1,4 +1,4 @@
-101-print_comb4.c
+#include <stdio.h>
 
 /**
  * main - print triple combos
@@ -15,6 +15,7 @@ int main(void)
 	i = 48;
 	j = 48;
 	k = 48;
+
 	while (i < 58)
 	{
 		j = i + 1;
@@ -30,12 +31,17 @@ int main(void)
 				{
 					putchar(44);
 					putchar(32);
-							k++;
-							}
-							j++;
-							}
-							i++;
-							}
-							putchar(10);
-							return (0);
+				}
+				k++;
+			}
+
+			j++;
+		}
+
+		i++;
+	}
+
+	putchar(10);
+
+	return (0);
 }
